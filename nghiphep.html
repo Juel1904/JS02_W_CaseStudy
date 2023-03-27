@@ -42,19 +42,48 @@
                     <td><button type="reset">Reset</button></td>
                 </tr>
             </table>
-            <!-- Tên:<input id="name-nv" type="text" placeholder="Họ và tên"> <br>
-            Giới tính: <Select id="GioitinhNV">
-                <option value="Nam">Nam</option>
-                <option value="Nữ">Nữ</option>
-                <option value="Khác">Khác</option>
-            </Select> <br>
-            Mã nhân viên: <input id="ma-nv" type="number" placeholder="Mã 3 số"> <br>
-            Năm sinh: <input type="number" id="namsinh-nv" placeholder="Năm sinh"> <br>
-            Năm làm việc: <input type="number" id="nam-lv" placeholder="Năm bắt đầu làm việc"> <br>
-            <button id="btn-addNV" type="button">Thêm nhân viên</button> <br> -->
+            
         </div>
     </form>
     
+    <form action="#">
+        <div>
+            <!-- Kiểm tra danh sách nhân viên hiện có -->
+            <h3>*** Tìm kiếm thông tin nhân viên trong công ty:</h3>
+            <table>
+                <tr>
+                    <td>Tên nhân viên:</td>
+                    <td><input type="text" id="searchTenNV" placeholder="tên cần tìm"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button onclick="findNV()" id="btn-findNV">Hiển thị thông tin</button></td>
+                </tr>
+            </table>
+            
+            <br>
+            <!-- <button type="reset">Reset</button> -->
+            <table id="bangTKNV" border="1">
+                <tr>
+                    <th>Tên nhân viên</th>
+                    <th>Mã nhân viên</th>
+                    <th>Năm sinh</th>
+                    <th>Năm làm việc</th>
+                    <th>Giới tính</th>
+                    <th>Số ngày phép còn lại</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    
+
     <form action="#">
         <div>
             <!-- Xóa bỏ nhân viên đã nghỉ việc -->
